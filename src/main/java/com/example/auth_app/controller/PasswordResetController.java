@@ -1,35 +1,3 @@
-/*
-package com.example.auth_app.controller;
-
-import com.example.auth_app.dto.EmailRequest;
-import com.example.auth_app.dto.PasswordResetRequest;
-import com.example.auth_app.service.PasswordResetService;
-import org.springframework.web.bind.annotation.*;
-
-@RestController
-@RequestMapping("/api/password")
-public class PasswordResetController {
-
-    private final PasswordResetService passwordResetService;
-
-    public PasswordResetController(PasswordResetService passwordResetService) {
-        this.passwordResetService = passwordResetService;
-    }
-
-    @PostMapping("/reset/request")
-    public String requestPasswordReset(@RequestBody EmailRequest emailRequest) {
-        passwordResetService.sendPasswordResetEmail(emailRequest.getEmail());
-        return "Email sent successfully";
-    }
-
-    @PostMapping("/reset/confirm")
-    public String resetPassword(@RequestBody PasswordResetRequest resetRequest) {
-        passwordResetService.resetPassword(resetRequest.getToken(), resetRequest.getPassword());
-        return "Password reset successfully";
-    }
-}
-
- */
 package com.example.auth_app.controller;
 
 import com.example.auth_app.dto.EmailRequest;
